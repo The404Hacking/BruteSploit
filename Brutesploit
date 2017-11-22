@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 
 
@@ -130,7 +130,7 @@ then
     echo ""
     echo -e $yellow "Search on the web : (unable to resolve hostnames ping) to find a solution"
 echo ""
-echo -e $okegreen "BrutSploit will continue , but some of its functions may not work properly."
+echo -e $okegreen "BruteSploit will continue , but some of its functions may not work properly."
 echo ""
 echo -e $okegreen "Press [ENTER] key to continue"
 read continue
@@ -141,7 +141,7 @@ then
     echo -e $yellow "You are connected to your local network but not to the web ."
     echo -e $yellow "Check if your router/modem gateway is connected to the web ."
 echo ""
-echo -e $okegreen "BrutSploit will continue , but some of its functions may not work properly."
+echo -e $okegreen "BruteSploit will continue , but some of its functions may not work properly."
 echo ""
 echo -e $okegreen "Press [ENTER] key to continue"
 read continue
@@ -151,7 +151,7 @@ elif [ $png == "2" ]
 then
 echo -e $red "You are not connected to any network ."
 echo ""
-echo -e $okegreen "BrutSploit will continue , but many of its functions will not work properly."
+echo -e $okegreen "BruteSploit will continue , but many of its functions will not work properly."
 echo ""
 echo -e $okegreen "Press [ENTER] key to continue"
 read continue
@@ -169,8 +169,8 @@ echo "  | __  |___ _ _| |_ ___|   __|___| |___|_| |_ "
 echo "  | __ -|  _| | |  _| -_|__   | - | | - | |  _| "
 echo "  |_____|_| |___|_| |___|_____|  _|_|___|_|_| "
 echo "                              |_|             "
-echo -e $lightgreen'-- -- +=[(c) 2017-2018 | dracos-linux.org | Kali.org | Hacker Indonesia '
-echo -e $cyan'-- -- +=[ Author: Screetsec < Edo Maland >  ]=+ -- -- '
+echo -e $lightgreen'--[(c) 2017-2018 | dracos-linux.org | Kali.org | The404Hacking]--'
+echo -e $yellow' --[Author: Screetsec <Edo Maland> , The404Hacking <Sir.4m1R>]--'
 echo -e " "
 
 if [ $(id -u) != "0" ]; then
@@ -202,9 +202,9 @@ fi
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
   echo -e $red [✔]::[Terminal]: remote ;
 echo ""
-    echo -e $red "BrutSploit & Setup does not work over a remote secure shell ."
+    echo -e $red "BruteSploit & Setup does not work over a remote secure shell ."
     echo ""
-echo -e $green "If you want to Install BrutSploit on a remote computer then "
+echo -e $green "If you want to Install BruteSploit on a remote computer then "
 echo -e $green "use a remote desktop connection like (rdesktop) or (vnc) "
 echo ""
 echo -e $green "Press [ENTER] key to exit"
@@ -249,11 +249,12 @@ echo "  | __ -|  _| | |  _| -_|__   | - | | - | |  _| "
 echo "  |_____|_| |___|_| |___|_____|  _|_|___|_|_| "
 echo "                              |_|             "
 echo -e "\t "$green"¦"
-echo -e "\t "$green"¦----"$red"►  "$white" Bruteforce & Wordlist Sploit Framework $green[Keys]    "
-echo -e "\t "$green"¦----"$red"►  "$white" Codename "$green": "$red"$CODENAME   "
-echo -e "\t "$green"¦----"$red"►  "$white" Version  "$green": "$red"$VERSION  "
-echo -e "\t "$green"¦----"$red"►  "$white" Modules  "$green": "$red"21 "$green"Modules  "
-echo -e "\t "$green"¦----"$red"►  "$white" GitHub   "$green": "$BlueF"https://github.com/The404Hacking/BruteSploit  \n\n"
+echo -e "\t "$green"¦----"$red"►  "$white" BruteForce & Wordlist Sploit Framework $green[Keys]    "
+echo -e "\t "$green"¦----"$red"►  "$white" Codename     "$green": "$red"$CODENAME   "
+echo -e "\t "$green"¦----"$red"►  "$white" Version      "$green": "$red"$VERSION  "
+echo -e "\t "$green"¦----"$red"►  "$white" Modules      "$green": "$red"21 "$green"Modules  "
+echo -e "\t "$green"¦----"$red"►  "$white" GitHub       "$green": "$BlueF"https://github.com/The404Hacking"
+echo -e "\t "$green"¦----"$red"►  "$white" BruteSploit  "$green": "$BlueF"https://github.com/The404Hacking/BruteSploit  \n\n"
 }
 
 
@@ -420,11 +421,12 @@ f_un_info_credits () { #
 		echo -e "\t"$green"¦ Credits - Special Thanks to Allah "
 		echo -e "\t"$green"¦"
 		echo -e "\t"$green"¦––––$red►"$green" Dracos Linux ( www.dracos-linux.org )  "
+		echo -e "\t"$green"¦––––$red►"$green" The404Hacking ( Telegram.me/The404Hacking )  "
   	echo -e "\t"$green"¦––––$red►"$green" Backbox indonesia ( www.www.backboxindonesia.or.id )  "
 		echo -e "\t"$green"¦––––$red►"$green" Offensive Security for the awesome OS"
 		echo -e "\t"$green"¦––––$red►"$green" Kali Linux ( http://www.kali.org/ )  "
 		echo -e "\t"$green"¦––––$red►"$green" http://www.kitploit.com/"
-		echo -e "\t"$green"¦––––$red►"$green" Big Thanks to : https://github.com/ \n\n"
+		echo -e "\t"$green"¦––––$red►"$green" Big Thanks to : https://www.github.com/ \n\n"
 }
 
 
@@ -439,7 +441,7 @@ echo ""
 echo -e $red"[*] Stop all service , Wait  ..."
 sleep 1
 echo ""
-echo -e $yellow"[*] Thank You For Using Brutsploit  =)."
+echo -e $yellow"[*] Thank You For Using BruteSploit  =)."
 echo ""
 echo -e $yellow"[*] Check Dracos Linux LFS, Penetration OS From Indonesia  =P."
 exit
@@ -450,16 +452,26 @@ exit
 fu_un_exit () {
 clear
 sleep 1
-echo -e $yellow"[*] Thank You For Using Brutsploit  =)."
+echo -e $yellow"[*] Thank You For Using BruteSploit  =)."
 echo ""
 sleep 1
-echo -e $red"[*] Follow me in Github ."
+echo -e $red"[*] Follow us !"
 echo ""
 sleep 1
-echo -e $okeegreen"[*] https://github.com/The404Hacking ."
+echo -e $red"[*] Telegram: T.me/The404Hacking"
+sleep 1
+echo -e $yellow"[*] Instagram: Instagram.com/The404Hacking"
+sleep 1
+echo -e $lightgreen"[*] Aparat: Aparat.com/The404Hacking"
+sleep 1
+echo -e $BlueF"[*] YouTube: yon.ir/youtube404"
+sleep 1
+echo -e $white"[*] Email: The404Hacking.Team@Gmail.Com"
+sleep 1
+echo -e $cyan"[*] Admins and Support: T.me/The404HackingAdmins"
 echo ""
 sleep 1
-echo -e $yellow"[*] Check Dracos Linux LFS, Penetration OS From Indonesia  =P."
+echo -e $yellow"[*] Check Dracos Linux LFS, Penetration OS From Indonesia  :)"
 exit
 }
 
@@ -623,7 +635,7 @@ fu_un_transform_1 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -692,7 +704,7 @@ fu_un_transform_2 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -761,7 +773,7 @@ fu_un_transform_3 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -831,7 +843,7 @@ fu_un_transform_4 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -901,7 +913,7 @@ fu_un_transform_5 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -971,7 +983,7 @@ fu_un_transform_6 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -1047,7 +1059,7 @@ fu_un_transform_7 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -1130,7 +1142,7 @@ fu_un_combine_1 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -1204,7 +1216,7 @@ fu_un_combine_1 ()
 						else
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦"
-							echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+							echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 				  		fi
 		done
 		}
@@ -1243,7 +1255,7 @@ fu_un_permut_1 ()
 		 	elif [[ $case1 == "run" ]]
 				then
 					chmod +x $perm
-					xterm -T " Brutsploit-Permutation " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e $perm
+					xterm -T " BruteSploit-Permutation " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e $perm
 					sleep 2
 					echo -e "\t"$green"¦"
 					echo -e "\t"$green"¦––––$red► "$green" all done file on output folder \n"
@@ -1255,7 +1267,7 @@ fu_un_permut_1 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -1327,7 +1339,7 @@ fu_un_permut_1 ()
 							else
 								echo -e "\t"$green"¦"
 								echo -e "\t"$green"¦"
-								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 					  		fi
 			done
 			}
@@ -1402,7 +1414,7 @@ fu_un_setup_1 ()
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 							else
-							xterm -T " Brutsploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e $tailu -b $ab -e $bc -f $cds -o "output/$_name" -s $de
+							xterm -T " BruteSploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e $tailu -b $ab -e $bc -f $cds -o "output/$_name" -s $de
 							sleep 1
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––$red► "$green" all done file on output folder \n"
@@ -1415,7 +1427,7 @@ fu_un_setup_1 ()
 							else
 								echo -e "\t"$green"¦"
 								echo -e "\t"$green"¦"
-								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 					  		fi
 			done
 			}
@@ -1455,7 +1467,7 @@ fu_un_setup_2 ()
 		 	elif [[ $case1 == "run" ]]
 				then
 					rm *.cupp > /dev/null 2>&1
-					xterm -T " Brutsploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e  python $sperm
+					xterm -T " BruteSploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e  python $sperm
 					sleep 2
 					mv *.cupp output
 					echo -e "\t"$green"¦"
@@ -1468,7 +1480,7 @@ fu_un_setup_2 ()
 					else
 						echo -e "\t"$green"¦"
 						echo -e "\t"$green"¦"
-						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+						echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 			  		fi
 	done
 	}
@@ -1526,7 +1538,7 @@ fu_un_setup_3 ()
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 							else
-							xterm -T " Brutsploit " -bg black -fg white  -fa monaco -fs 9 -geometry 110x16-0+0 -e $crc 10 10 0123456789 -t $area%%%%%%% -o "output/$_name"
+							xterm -T " BruteSploit " -bg black -fg white  -fa monaco -fs 9 -geometry 110x16-0+0 -e $crc 10 10 0123456789 -t $area%%%%%%% -o "output/$_name"
 							sleep 1
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––$red► "$green" all done file on output folder \n"
@@ -1539,7 +1551,7 @@ fu_un_setup_3 ()
 							else
 								echo -e "\t"$green"¦"
 								echo -e "\t"$green"¦"
-								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 					  		fi
 			done
 			}
@@ -1597,7 +1609,7 @@ fu_un_setup_4 ()
 										echo -e "\t"$green"¦"
 										echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 										else
-										xterm -T " Brutsploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e $crc 11 11 0123456789 -t $area%%%%%%%% -o "output/$_name"
+										xterm -T " BruteSploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e $crc 11 11 0123456789 -t $area%%%%%%%% -o "output/$_name"
 										sleep 1
 										echo -e "\t"$green"¦"
 										echo -e "\t"$green"¦––––$red► "$green" all done file on output folder \n"
@@ -1610,7 +1622,7 @@ fu_un_setup_4 ()
 										else
 											echo -e "\t"$green"¦"
 											echo -e "\t"$green"¦"
-											echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+											echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 								  		fi
 						done
 						}
@@ -1668,7 +1680,7 @@ fu_un_setup_5 ()
 																echo -e "\t"$green"¦"
 																echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 																else
-																xterm -T " Brutsploit " -bg black -fg white  -fa monaco -fs 9 -geometry 110x16-0+0 -e $crc 12 12 0123456789 -t $area%%%%%%%%% -o "output/$_name"
+																xterm -T " BruteSploit " -bg black -fg white  -fa monaco -fs 9 -geometry 110x16-0+0 -e $crc 12 12 0123456789 -t $area%%%%%%%%% -o "output/$_name"
 																sleep 1
 																echo -e "\t"$green"¦"
 																echo -e "\t"$green"¦––––$red► "$green" all done file on output folder \n"
@@ -1681,7 +1693,7 @@ fu_un_setup_5 ()
 																else
 																	echo -e "\t"$green"¦"
 																	echo -e "\t"$green"¦"
-																	echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+																	echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 														  		fi
 												done
 												}
@@ -1739,7 +1751,7 @@ fu_un_setup_6 ()
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 							else
-							xterm -T " Brutsploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e cewl -w "output/$_name" $_site
+							xterm -T " BruteSploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e cewl -w "output/$_name" $_site
 							sleep 1
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––$red► "$green" all done file on output folder \n"
@@ -1752,7 +1764,7 @@ fu_un_setup_6 ()
 							else
 								echo -e "\t"$green"¦"
 								echo -e "\t"$green"¦"
-								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 					  		fi
 			done
 			}
@@ -1823,7 +1835,7 @@ fu_un_attack_1 ()
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 							else
-							xterm -T " Brutsploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e $_medusa -h $_hosts -u $_user -P $_pass -M $_service &
+							xterm -T " BruteSploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -e $_medusa -h $_hosts -u $_user -P $_pass -M $_service &
 							sleep 1
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––$red► "$green" Complete \n"
@@ -1836,7 +1848,7 @@ fu_un_attack_1 ()
 							else
 								echo -e "\t"$green"¦"
 								echo -e "\t"$green"¦"
-								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 					  		fi
 			done
 			}
@@ -1895,7 +1907,7 @@ fu_un_attack_2 ()
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 							else
-							xterm -T " Brutsploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -hold -e $_crack -v -u -D -p $_pass $_file  &
+							xterm -T " BruteSploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -hold -e $_crack -v -u -D -p $_pass $_file  &
 							sleep 1
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––$red► "$green" Complete and Wait :p \n"
@@ -1908,7 +1920,7 @@ fu_un_attack_2 ()
 							else
 								echo -e "\t"$green"¦"
 								echo -e "\t"$green"¦"
-								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 					  		fi
 			done
 			}
@@ -1966,7 +1978,7 @@ fu_un_attack_3 ()
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 							else
-							xterm -T " Brutsploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -hold -e $_dir -u $_hosts -e $_ex &
+							xterm -T " BruteSploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -hold -e $_dir -u $_hosts -e $_ex &
 							sleep 1
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––$red► "$green" Complete \n"
@@ -1979,7 +1991,7 @@ fu_un_attack_3 ()
 							else
 								echo -e "\t"$green"¦"
 								echo -e "\t"$green"¦"
-								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 					  		fi
 			done
 			}
@@ -2048,7 +2060,7 @@ fu_un_attack_4 ()
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––"$red"►"$red" please set values to requirements before run module"
 							else
-							xterm -T " Brutsploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -hold -e python $_igs -u $_user -w $_word -p $_prox -t $_thread -d -v &
+							xterm -T " BruteSploit " -bg black -fg white -fa monaco -fs 9 -geometry 110x16-0+0 -hold -e python $_igs -u $_user -w $_word -p $_prox -t $_thread -d -v &
 							sleep 1
 							echo -e "\t"$green"¦"
 							echo -e "\t"$green"¦––––$red► "$green" Complete \n"
@@ -2061,7 +2073,7 @@ fu_un_attack_4 ()
 							else
 								echo -e "\t"$green"¦"
 								echo -e "\t"$green"¦"
-								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+								echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 					  		fi
 			done
 			}
@@ -2072,7 +2084,7 @@ mainmenu () {
 	f_un_ban
 		while /bin/true
 			do
-				echo -e $green"\n ┌─[Brutsploit]──[~]─["$BlueF"noob]:"
+				echo -e $green"\n ┌─["$yellow"BruteSploit"$okegreen"]──["$red"The404Hacking"$okegreen"]─["$BlueF"noob"$okegreen"]:"
 				echo -ne $green" └─────► " ; tput sgr0
 				read idn1 idn2 idn3 idn4 idn5 idn6
 		if [[ $idn1 == "Help" ]] || [[ $idn1 == "help" ]]
@@ -2190,7 +2202,7 @@ mainmenu () {
 		else
 			echo -e "\t"$green"¦"
 			echo -e "\t"$green"¦"
-			echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : spesific your command \n "
+			echo -e "\t"$green"¦––––"$red"►   "$red" Wrong    "$red" : Spesific Your Command ! \n "
 		fi
 	done
 }
