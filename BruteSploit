@@ -270,7 +270,7 @@ fu_un_help () {
 	echo -e "\t"$green"¦––––"$red"►"$green" show options "$red": "$white"show module options"
 	echo -e "\t"$green"¦––––"$red"►"$green" run          "$red": "$white"Execute the module"
 	echo -e "\t"$green"¦––––"$red"►"$green" set          "$red": "$white"Set a value"
-	echo -e "\t"$green"¦––––"$red"►"$green" back         "$red": "$white"Back to main menu}"
+	echo -e "\t"$green"¦––––"$red"►"$green" back         "$red": "$white"Back to main menu"
 	echo -e "\t"$green"¦––––"$red"►"$green" clear        "$red": "$white"clear window "
 	echo -e "\t"$green"¦––––"$red"►"$green" credits      "$red": "$white"show credits "
 	echo -e "\t"$green"¦––––"$red"►"$green" exit         "$red": "$white"Exit \n\n"
